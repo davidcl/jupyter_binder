@@ -1,0 +1,3 @@
+metakernel==0.24.4
+scilab_kernel==0.9.10
+
