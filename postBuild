@@ -7,6 +7,14 @@ VERSION=6.1.0
 if [ ! -d scilab-$VERSION ]; then
     curl https://www.scilab.org/download/$VERSION/scilab-$VERSION.bin.linux-x86_64.tar.gz |tar xzf -
 fi
-PATH=$PATH:$(pwd)/scilab-$VERSION/bin
+PATH=$(pwd)/scilab-$VERSION/bin:$PATH
 export PATH
+
+# disable TK
+SCI_DISABLE_TK=1
+export SCI_DISABLE_TK
+
+# only headless java
+SCI_JAVA_ENABLE_HEADLESS=1
+export SCI_JAVA_ENABLE_HEADLESS
 
