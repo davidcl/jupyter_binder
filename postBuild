@@ -7,8 +7,3 @@ VERSION=6.1.0
 curl https://www.scilab.org/download/$VERSION/scilab-$VERSION.bin.linux-x86_64.tar.gz |tar xzf -
 export PATH=$PATH:$(pwd)/scilab-$VERSION/bin
 
-# local install Scilab kernel
-cd scilab_kernel
-python -m scilab_kernel install --user
-cd ..
-
