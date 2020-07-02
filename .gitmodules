@@ -1,0 +1,3 @@
+[submodule "scilab_kernel"]
+	path = scilab_kernel
+	url = https://github.com/Calysto/scilab_kernel
