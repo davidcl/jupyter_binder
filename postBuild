@@ -11,9 +11,9 @@ PATH=$(pwd)/scilab-$VERSION/bin:$PATH
 export PATH
 
 # fix Scilab bug #16368
-rm "$(pwd)/scilab-$VERSION/lib/thirdparty/libssl.so*"
-rm "$(pwd)/scilab-$VERSION/lib/thirdparty/libcrypto.so*"
-rm "$(pwd)/scilab-$VERSION/lib/thirdparty/libcurl.so*"
+rm "$(pwd)"/scilab-$VERSION/lib/thirdparty/libssl.so*
+rm "$(pwd)"/scilab-$VERSION/lib/thirdparty/libcrypto.so*
+rm "$(pwd)"/scilab-$VERSION/lib/thirdparty/libcurl.so*
 
 # disable TK
 SCI_DISABLE_TK=1
